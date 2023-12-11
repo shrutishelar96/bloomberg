@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    
+<!-- </head> -->
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+
+}
+
+/* Navbar */
+ .navbar {
+    
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80px;
+    
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ } 
+.logo img{
+    width:100%;
+    height: 70px;
+    margin: 0; 
+    border-radius: 50px;
+    mix-blend-mode: multiply;
+} 
+
+
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Home Section */
+
+
+
+#home {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 100px 0;
+    height: 510px;
+   
+     background-image: url('./assets/creative-copywriting-commercial-text-seo-editing_107791-15687.avif');
+     background-repeat: no-repeat;
+     background-size: cover; 
+     mix-blend-mode: multiply;
+}
+
+.hero {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color:black;
+    padding-left: 40%;
+}
+.hero p{
+    font-size: 30px;
+    /* padding-left: 50%; */
+    padding-left: 180px;
+}
+.button{
+    padding-left: 150px;
+}
+
+#btn{
+    
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    
+    background-color: orange;
+  
+    /* text-emphasis-color: white; */
+} 
+
+
+
+
+
+
+
+
+/* About Section */
+#about-main {
+    margin: 0%;
+    background-color: #fff;
+    padding: 80px 0;
+    height: 700px;
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-bottom: 20%; */
+    
+  
+}
+#about {
+    margin: 0;
+    background-color: #fff;
+    padding: 80px 0;
+    height: 670px;
+    background-image: url('./assets/finnace\ baground.jpg');
+  /* padding-bottom: 7%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+  
+}
+
+.container {
+
+padding-right: 20px ;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* padding-right: 20px; */
+}
+
+.container h2 {
+    margin-top: -20px;
+    font-size: 32px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.info{
+    margin-top: -55px;
+    /* margin-top: 0%; */
+    padding-right: 60%;
+    font-weight: 300px;
+    font-size: 20px;
+    /* padding-bottom: 30%; */
+}
+
+
+/* Projects Section */
+ #FAQ {
+    /* padding-top: 50px; */
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    height: 910px;
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+width:-100%, 100%;
+}
+ #sub-faq {
+    /* padding-top: 10%; */
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    height: 910px;
+    margin: 0px;
+    
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+width:-100%, 100%;
+}
+.container2 img{
+    width: auto;
+    height: 500px;
+    mix-blend-mode: multiply;
+}
+
+
+
+
+.faq{
+padding: 10px 12%;
+text-align: center;
+font-size: 22px;
+
+}
+.faq h2{
+font-weight: 500;
+font-size: 28px;
+}
+
+.accordian{
+margin: 60px auto;
+width: 100%;
+max-width: 750px;
+}
+.accordian li{
+list-style: none;
+width: 100%;
+padding: 5px;
+}
+.accordian li label{
+display: flex;
+align-items: center;
+padding: 20px;
+/* font-sie: 18px; */
+font-size: 23px;
+font-weight: 300;
+background:blueviolet;
+margin-bottom: 2px;
+cursor: pointer;
+position: relative;
+border-radius: 25px;
+color: #f4f1f1;
+}
+label::after{
+content: '+';
+font-size: 34px;
+position: absolute;
+right: 20px;
+transition: transform 0.5s;
+/* border-radius: 10px; */
+}
+input[type="radio"]{
+display: none;
+}
+.accordian .content{
+background: #f4f1f1;
+text-align: left;
+padding: 0 20px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.5s, padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+transform: rotate(135deg);
+}
+
+
+/* Cardx Section */
+
+
+#Info{
+   width: auto; 
+   height: 700px;
+   background-image: url('./assets/background.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.container3{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:100px 50px;
+        padding:100px 50px;
+    }
+    .container3 .card{
+        
+position: relative;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 350px;
+height: 300px;
+background: white;
+border-radius: 20px;
+box-shadow: 0 35px 80px white;
+transition: 0.5s;
+    }
+.container3 .card:hover{
+    height: 400px;
+}
+.container3 .card .imgBx{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+    /* background-image: url('./css/gift.avif'); */
+
+}
+.container3 .card:hover .imgBx{
+    top:-100px;
+    scale:0.75;
+    box-shadow: 0 15px 45px gray;
+}
+.container3 .card .imgBx img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.container3 .card .content{
+    position: absolute;
+    top: 245px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+.container3 .card:hover .content{
+    top:130px;
+    height:250px;
+}
+.container3 .card .content h2{
+    font-size: 1.5em;
+    font-weight: 700px;
+    color: black;
+}
+.container3 .card .content p{
+   color: rgb(15, 14, 14);
+}
+
+/* -----------foooter------- */
+.footer{
+    margin: 0%;
+    
+    height: 200px;
+    background-color: rgb(241, 239, 239);
+    display: flex;
+
+}
+.connect{
+    padding-left: 60%;
+}
+ .icon img{
+    /* margin-top: -8px; */
+    height: 50px;
+    width: 60px;
+    mix-blend-mode: multiply;
+    border-radius: 25px;
+} 
+.sponsors{
+    padding-left: 10px;
+}
+.icon2 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    padding-left: 10px;
+    mix-blend-mode: multiply;
+
+}
+.developer{
+display: flex;
+justify-content: center;
+text-align: center;
+    background-color: rgb(243, 238, 238);
+}
+
+.developer a{
+    text-align: center;
+    margin: 14px;
+}
+/* .sponsors{
+ padding-right: 70%;
+} */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="./assets/B.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sub-faq"></a></li>
+                <li><a href="#Info">Exprience</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="home" class="home-section">
+        <div class="hero">
+            <h2>"Bloomberg "</h2>
+            <p>Women In Finance</p>
+            <div class="button">
+            <!-- <button type="button" id="btn">Register</button> -->
+            <!-- <button type="button" id="btn">Read Me</button> -->
+            <!-- <a href="https://drive.google.com/file/d/1l6oXbKT5kG1gNVz7u9U2hhkaXkkcmno4/view?usp=sharing" >
+                <button type="button" id="btn">Read Me</button>
+            </a> -->
+
+            </div>
+        </div>
+    </section>
+
+    
+<section id="about-main">
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+          <!-- <img src="./css/html.png"> -->
+            <div class="info">
+            <p> <b>APAC Women in Finance Initiative</b> 
+                At Bloomberg, we’re committed to making the world of
+finance more accessible to women — using the tools of
+education, exposure and experience to inspire future generations
+and create a more inclusive global economy. Our new APAC
+Women In Finance initiative aims to connect 250 young women
+across five APAC countries to high-level role models who will
+provide them with insight into global finance with a focus on
+emerging fields such as ESG and fintech.
+                <br>
+                <br>
+                <dl>
+                    <dt><b>Date</b></dt>
+                    <dd>- September to November 2023 </dd>
+                    <dt><b>Venue</b></dt>
+                    <dd>- Bloomberg Office Mumbai</dd>
+                  </dl>
+               
+            </p> 
+            </div>
+        </div>
+    </section>
+</section>
+
+    <section id="Info">
+
+        <div class="container3">
+            <div class="card" style="color:black;">
+                <div class="imgBx">
+                    <img src="./assets/calender.avif">
+                </div>
+                <div class="content">
+                    <h2>Important Dates </h2>
+                    <p><ul>
+                        <li>5th September –Orientation</li>
+                        <li>13th September-Terminal Training</li>
+                        <li>4th October –  Portfolio Presentation </li>
+                        <li>11th sep- 17th Nov – Corporate Visit</li>
+                        <li>  10th October -NSE Visit</li>
+                        <li> 20th November- 6th December - Closing Ceremony </li>
+                    </ul></p>
+                </div>
+    
+            </div>
+
+            <div class="card" style="color:black;">
+                <div class="imgBx">
+                    <img src="./assets/bloomberg keyboard.jpg">
+                </div>
+                <div class="content">
+                    <h2>Gallery</h2>
+                    <p>Captured Moments!! </p>
+                    <ul>
+                        <li>Day 1</li>
+                        <li>Day 2</li>
+                        <li>Day 3 </li>
+                        <li>National Stock Exchange</li>
+                        <li><a href="./gallary.html">See All</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="card" style="color:black;">
+                <div class="imgBx">
+                    <img src="./assets/exp.jpg">
+                </div>
+                <div class="content">
+                    <h2>My Exprience</h2>
+                    <p>
+                        <ul>
+                            <li><a href="./bblog.html">Read Me</a></li>
+                            <!-- <li> Singapore trip Winners</li>
+                    <li> Exprience & feedback </li>
+                   -->
+                    
+                       </ul>
+                        </p>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+
+    </section>
+
+    <div class="footer">
+               
+        <!-- </div> -->
+        <div class="sponsors">
+            <h2>Partners</h2>
+            <div class="icon2">
+                <!-- <img src="./css/amazon.png"> -->
+                <img src="./assets/blogo.png">
+                <img src="./assets/tglogo.webp">
+                <img src="./assets/katalyst_india_logo.jpeg">
+            </div> 
+        </div>
+<div class="connect">
+    <h2>Connect with us</h2>
+    <!-- <i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i> -->
+    <div class="icon">
+        <a href="https://www.linkedin.com/company/bloomberg/"><img src="./assets/linkedin.png" alt="Linkedin"></a>
+        <a href="https://www.bloomberg.com/asia"><img src="./assets/welogo.png" alt="Githhub"></a>
+        <a href=""><img src="./assets/WhatsApp.svg.webp" alt="Whatsapp"></a>
+
+    </div>
+</div>
+
+</div>
+<div class="developer">
+    <p>Devloped by- Shruti Shelar</p>
+    <a href="https://www.linkedin.com/in/shruti-shelar-50bb07229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+    <a href=" mailto:shrutishelar9696@gmail.com">Email</a>
+ </div>
+
+    <script src="js/script.js">
+        // document.getElementById("content").onclick("myfunction()")
+        // <button type="button" nclick="document.getElementById('p7').innerHTML='answer: hypertext markup language'">answer</button>
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
